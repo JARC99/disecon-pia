@@ -28,19 +28,19 @@ font_manager.fontManager.addfont(FONT_FILE)
 
 # %% Problem constants
 
-H = 600  # m AMSL
-V = 15  # m/s
+H = 640  # m AMSL
+V = 22  # m/s
 g = Atmosphere(H).grav_accel[0]  # m/s^2
 rho = Atmosphere(H).density[0]  # kg/m^3
 nu = Atmosphere(H).kinematic_viscosity[0]  # m^2/s
 
-WL = 11  # kg/m^2
-W0 = 5  # kg
-AR = 6
+WL = 23.239  # kg/m^2
+W0 = 10  # kg
+AR = 11
 
 # planform = [0.344, 0.329, 0.232, 0.2] # 6 sections
 # planform = [0.34, 0.338, 0.303, 0.202, 0.2] # 8 sections
-planform = [0.348, 0.338, 0.31, 0.272, 0.2, 0.2]  # 10 sections
+planform = [0.252, 0.236, 0.186, 0.1]  # 10 sections
 n_sections = 6
 
 max_camber_min = 0  # %
@@ -187,7 +187,7 @@ def optimize_airfoil(population_size, max_generations, p_crossover,
 
 def main():
 
-    airfoil, alpha_i = optimize_airfoil(20, 20, 0.5, 0.95)
+    airfoil, alpha_i = optimize_airfoil(50, 20, 0.5, 0.95)
     create_VSP_wing(b, planform, airfoil, alpha_i)
 
 

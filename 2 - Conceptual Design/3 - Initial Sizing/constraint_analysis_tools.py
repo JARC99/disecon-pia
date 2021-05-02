@@ -167,6 +167,7 @@ def get_V_cr_PW_rat(design_brief, concept, WL):
     k = 1/(np.pi*AR*e)
     b_rat_Rmax = ((n + 1)/(3*n - 1))**(1/4) 
     V_cr = b_rat_Rmax*np.sqrt(2/rho*WL*np.sqrt(k/CDmin))
+    V_L = np.sqrt(2/rho*WL*np.sqrt(k/(3*CDmin)))
     q = 1/2 * rho * V_cr**2 # Pa
     eta_o = eta_e*eta_p
     

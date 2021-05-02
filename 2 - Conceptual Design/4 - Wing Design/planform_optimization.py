@@ -21,20 +21,20 @@ font_manager.fontManager.addfont(FONT_FILE)
 
 # %% Problem constants
 
-h = 600  # m AMSL
-V = 15  # m/s
+h = 640 # m AMSL
+V = 22  # m/s
 g = Atmosphere(h).grav_accel  # m/s^2
 rho = Atmosphere(h).density  # kg/m^3
 nu = Atmosphere(h).kinematic_viscosity  # m^2/s
 
-WL = 11  # kg/m^2
-W0 = 5  # kg
-AR = 8
+WL = 23.239  # kg/m^2
+W0 = 10  # kg
+AR = 11
 
-n_sections = 10
+n_sections = 6
 
-c_min = 0.20  # m
-c_max = 0.4 # m
+c_min = 0.10  # m
+c_max = 0.50 # m
 
 S = W0/WL  # m^2
 b = np.sqrt(AR*S)  # m
@@ -169,7 +169,7 @@ def optimize_planform(population_size, max_generations, p_crossover,
 
 
 def main():
-    return optimize_planform(200, 1000, 0.9, 0.1)
+    return optimize_planform(200, 300, 0.9, 0.1)
 
 
 if __name__ == "__main__":

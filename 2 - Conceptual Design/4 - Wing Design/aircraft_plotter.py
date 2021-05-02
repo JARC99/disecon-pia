@@ -82,8 +82,8 @@ def create_VSP_wing(wing_span, planform, airfoil, alpha_i):
     max_tc = airfoil[2]
 
     vsp.VSPCheckSetup()
-   # vsp.VSPRenew()
-    #vsp.ClearVSPModel()
+   
+    vsp.ClearVSPModel()
 
     wing_id = vsp.AddGeom('WING')
     vsp.SetGeomName(wing_id, 'Wing')
@@ -113,8 +113,6 @@ def create_VSP_wing(wing_span, planform, airfoil, alpha_i):
     vsp.SetParmValUpdate(wing_id, 'Y_Rel_Rotation', 'XForm', alpha_i)
 
     vsp.WriteVSPFile(
-        'C:/Users/jaros/Google Drive/Universidad/Trabajos Escolares'
-        '/PIAE I/PIAE GrabCAD Workbench/3 - Conceptual Design/'
-        '4 - Wing Design/wing_model.vsp3')
+        'C:/Users/jaros/Documents/GitHub/DISECON_PIA/2 - Conceptual Design/4 - Wing Design/wing_model.vsp3')
 
     print('Done!')
