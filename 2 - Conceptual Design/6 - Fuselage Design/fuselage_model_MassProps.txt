@@ -1,0 +1,18 @@
+WARNING: 1 open meshes merged
+     Merged: Wing
+...Mass Properties...
+2 Num Comps
+2 Total Num Meshes
+2840 Total Num Tris
+
+0.461652             Total Mass
+0.474500 -0.000000 0.055906       Center of Gravity
+0.078303 0.009081 0.086455       Ixx, Iyy, Izz
+-0.000000 0.000466 0.000006       Ixy, Ixz, Iyz
+0.012674             Volume
+
+Name	Mass	cgX	cgY	cgZ	Ixx	Iyy	Izz	Ixy	Ixz	Iyz	Volume
+Wing	0.304422	0.499601	-0.000000	0.075043	0.077662	0.000831	0.078459	-0.000000	-0.000029	0.000006	0.008011
+Fuselage	0.157230	0.425900	-0.000000	0.018854	0.000314	0.007359	0.007432	0.000000	0.000066	-0.000000	0.004663
+Name	Mass	cgX	cgY	cgZ	Ixx	Iyy	Izz	Ixy	Ixz	Iyz	Volume
+Totals	0.461652	0.474500	-0.000000	0.055906	0.078303	0.009081	0.086455	-0.000000	0.000466	0.000006	0.012674

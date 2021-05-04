@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = empty-project-type
-recent_files = ['2 - Conceptual Design\\5 - Propulsion System Design\\propeller_analysis.py', '2 - Conceptual Design\\3 - Initial Sizing\\constraint_analysis.py']
+recent_files = ['2 - Conceptual Design\\4 - Wing Design\\airfoil_optimization.py', '2 - Conceptual Design\\4 - Wing Design\\wing_structure.py']
 
 [main]
 version = 0.2.0

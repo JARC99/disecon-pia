@@ -111,6 +111,7 @@ def create_VSP_wing(wing_span, planform, airfoil, alpha_i):
         vsp.SetParmValUpdate(wing_id, 'ThickChord', 'XSecCurve_{0}'.format(i),
                              max_tc/100)
     vsp.SetParmValUpdate(wing_id, 'Y_Rel_Rotation', 'XForm', alpha_i)
+    vsp.SetParmValUpdate(wing_id, 'Origin', 'XForm', 0.25)
 
     vsp.WriteVSPFile(
         'C:/Users/jaros/Documents/GitHub/DISECON_PIA/2 - Conceptual Design/4 - Wing Design/wing_model.vsp3')
